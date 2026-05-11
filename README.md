@@ -2,6 +2,8 @@
 
 面向本科毕业论文的 **Cursor Agent Skill**：在**不改变核心观点与事实**的前提下，协助调整表述以降低 **AIGC 检测**或**传统查重**风险；支持 **LaTeX** 与**纯文本**，建议**逐段**处理。
 
+（本仓库在 GitHub 上名为 `thesis-aigc-reducer-skill`；安装到 Cursor 时文件夹名仍建议使用 `thesis-aigc-reducer`，与 `SKILL.md` 中 `name` 字段一致。）
+
 ## 功能概览
 
 - **AIGC 降率模式**：针对知网、维普等 AIGC 检测场景，弱化「模板化、句式过于整齐」等特征，在保持本科生书面语水平的前提下改写。
