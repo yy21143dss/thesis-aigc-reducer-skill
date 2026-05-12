@@ -16,15 +16,15 @@
 
 ## 改写结果
 
-人工智能技术这几年发展得很快，深度学习也因此在计算机视觉领域占据了比较核心的位置。拿卷积神经网络来说，它的工作方式是通过多层特征提取，让模型自己去学习图像中不同层次的表示——这一点其实挺关键的。具体而言，网络浅层主要负责提取边缘、纹理这类偏底层的特征；到了中间层，网络开始捕获一些更抽象的东西，比如形状和物体的局部结构；而深层网络则进一步学习到语义层面的高级特征。正因为有这样的层次化学习能力，深度学习在图像分类、目标检测、语义分割等任务上，表现确实不错。不过话说回来，这类模型对标注数据的需求量很大，一旦数据不够充足，应用起来就会受到不少限制。
+人工智能技术近年来发展迅速，深度学习已逐步成为计算机视觉领域中较为核心的技术手段。卷积神经网络的基本机制在于通过多层特征提取，使模型能够自动习得图像中不同层次的表示。就网络结构而言，浅层部分主要负责提取边缘与纹理等低级特征；中间层则进一步捕获形状及部件等具有一定抽象性的中级特征；深层网络在此基础上学习语义级别的高级特征。正是由于具备这种层次化的特征学习能力，深度学习模型在图像分类、目标检测、语义分割等任务中均取得了较为突出的性能表现。但需要指出的是，此类模型通常依赖大量标注数据进行训练，这在一定程度上制约了其在数据稀缺场景下的推广应用。
 
 ## 修改说明
 
-- 第1句：将"随着...的快速发展"改为更口语化的"这几年发展得很快"，去除 AI 典型的"随着"句式
-- 第2句：加入"拿...来说"的个人化引入方式，插入破折号补充说明
-- 第3-5句：去掉"首先、其次、最后"的 AI 典型排列，改为"具体而言""到了中间层""而深层"的自然过渡
-- 第6句：将"因此"替换为"正因为"，用逗号衔接而非另起一句
-- 第7句：将"然而"替换为"不过话说回来"，更口语化；重组句式
+- 第1句：将"随着...的快速发展"改为"近年来发展迅速"，消除 AI 典型的"随着"开头句式
+- 第2句：将"通过...能够..."改为"基本机制在于..."的解释性句式，调整了语序
+- 第3-5句：去掉"首先、其次、最后"的 AI 典型排列，改为"就...而言""则进一步""在此基础上"等更多样的学术过渡
+- 第6句：将"因此"替换为"正是由于"，调整句式结构
+- 第7句：将"然而"替换为"但需要指出的是"，使用学术性的限定表达
 
 ---
 
@@ -49,28 +49,27 @@
 ## 改写结果（LaTeX）
 
 ```latex
-深度学习技术在自然语言处理这一领域的进展，近些年可以说是相当明显的\cite{devlin2019bert}。
-预训练语言模型的基本思路是在大规模语料库上做无监督学习，
-从而让模型获得比较丰富的语言知识——这也是目前主流方法的核心所在。
-在众多模型中，\textbf{BERT}算是比较有代表性的一个，
-它的底层架构基于Transformer编码器，
-训练过程中主要依赖两个任务：一个是掩码语言模型（Masked Language Model），
-另一个是下一句预测（Next Sentence Prediction），
-目的是学习双向的上下文表示\cite{vaswani2017attention}。
-从实验数据来看，BERT在好几项自然语言理解基准测试上都拿到了当时的最好成绩，
-具体数据见表\ref{tab:bert_results}。
+深度学习技术在自然语言处理领域的发展近些年较为迅速，已取得了一系列值得关注的成果\cite{devlin2019bert}。
+预训练语言模型的核心思路在于借助大规模语料库开展无监督学习，
+使模型能够获取较为丰富的语言知识。
+\textbf{BERT}作为其中具有代表性的模型之一，
+其架构基于Transformer编码器，
+预训练阶段采用了掩码语言模型（Masked Language Model）与下一句预测（Next Sentence Prediction）
+两项任务，以此习得双向上下文表示\cite{vaswani2017attention}。
+从实验结果来看，BERT在多项自然语言理解基准测试中均达到了当时的最优水平，
+相关数据详见表\ref{tab:bert_results}。
 ```
 
 ## 改写结果（纯文本预览）
 
-深度学习技术在自然语言处理这一领域的进展，近些年可以说是相当明显的。预训练语言模型的基本思路是在大规模语料库上做无监督学习，从而让模型获得比较丰富的语言知识——这也是目前主流方法的核心所在。在众多模型中，BERT算是比较有代表性的一个，它的底层架构基于Transformer编码器，训练过程中主要依赖两个任务：一个是掩码语言模型（Masked Language Model），另一个是下一句预测（Next Sentence Prediction），目的是学习双向的上下文表示。从实验数据来看，BERT在好几项自然语言理解基准测试上都拿到了当时的最好成绩，具体数据见表。
+深度学习技术在自然语言处理领域的发展近些年较为迅速，已取得了一系列值得关注的成果。预训练语言模型的核心思路在于借助大规模语料库开展无监督学习，使模型能够获取较为丰富的语言知识。BERT作为其中具有代表性的模型之一，其架构基于Transformer编码器，预训练阶段采用了掩码语言模型（Masked Language Model）与下一句预测（Next Sentence Prediction）两项任务，以此习得双向上下文表示。从实验结果来看，BERT在多项自然语言理解基准测试中均达到了当时的最优水平，相关数据详见表。
 
 ## 修改说明
 
-- 第1句：将"近年来...取得了显著进展"倒装为"进展...近些年可以说是相当明显的"，打破 AI 典型的"近年来"开头
-- 第2句：改为"基本思路是..."的解释性句式，加入破折号插入语
-- 第3句：加入"算是比较有代表性的一个"这类个人化表达，将并列描述改为口语化的"一个是...另一个是..."
-- 第4句：将"实验结果表明"改为"从实验数据来看"，将"如表X所示"改为"具体数据见表"
+- 第1句：将"近年来...取得了显著进展"重组为"发展近些年较为迅速，已取得了..."，打破 AI 典型的"近年来"开头
+- 第2句：将"通过...能够捕获"改为"核心思路在于借助...使模型能够获取"，调整句式结构
+- 第3句：将"其中...采用了"改为"作为其中具有代表性的模型之一，其架构..."，调整主语引入方式
+- 第4句：将"实验结果表明"改为"从实验结果来看"，将"如表X所示"改为"相关数据详见表"
 - 所有 `\cite{}`、`\ref{}`、`\textbf{}` 标记完整保留
 
 ---
@@ -87,13 +86,13 @@
 
 ## 改写结果
 
-In this paper, we look into how deep learning techniques can be applied to medical image analysis — a topic that has drawn quite a bit of attention in recent years. The main contribution here is a new convolutional neural network architecture, designed with the specific goal of tackling the limited training data problem that medical imaging often faces. We tested the proposed method on three benchmark datasets, and the results turned out to be fairly encouraging: it achieved what can be considered state-of-the-art performance, showing notable gains in both accuracy and robustness over several existing approaches.
+This paper investigates the application of deep learning techniques to medical image analysis, a field that has attracted considerable research interest. A convolutional neural network architecture is proposed in this work, with the specific aim of addressing the challenge posed by limited training data in the medical imaging domain. Evaluation on three benchmark datasets indicates that the proposed method attains state-of-the-art performance, yielding notable improvements in both accuracy and robustness relative to several existing approaches.
 
 ## 修改说明
 
-- Sentence 1: Replaced "presents a comprehensive study" with the more conversational "we look into", added a dash-separated aside
-- Sentence 2: Restructured from passive to active voice, added "designed with the specific goal of" for a more personal tone
-- Sentence 3: Broke the formal "Our experimental results demonstrate that" into a more narrative flow with "We tested...and the results turned out to be", softened "significant improvements" to "notable gains"
+- Sentence 1: Replaced "presents a comprehensive study on" with "investigates the application of...to", restructured the clause order
+- Sentence 2: Changed from "We propose" to passive voice "is proposed in this work", replaced "effectively addresses" with "addressing the challenge posed by"
+- Sentence 3: Replaced "Our experimental results demonstrate that" with "Evaluation on...indicates that", changed "significant improvements" to "notable improvements", replaced "compared to" with "relative to"
 
 ---
 
